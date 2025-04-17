@@ -1,0 +1,208 @@
+:root {
+    --redmain: #EC2127;
+    --darkheader: #141414;
+    --darkmain: #202020;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--darkmain);
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Header */
+
+.header {
+    background-color: var(--darkheader);
+    height: 111px;
+    box-shadow: 0px 7px var(--redmain);
+    justify-content: space-between;
+}
+
+.header, .header-options, .login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .title {
+    font-family: "Almendra SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 96px;
+    color: var(--redmain);
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 70px;
+
+}
+
+.header-options a {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-options {
+    gap: 3em;
+    text-align: center;
+}
+
+.header-options a:hover {
+    text-decoration: underline 3px var(--redmain);
+}
+
+.header hr {
+    height: 40px;
+    color: #fff;
+}
+
+.login {
+    gap: 1em;
+    margin-right: 40px;
+}
+
+.login a {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline 3px var(--redmain);
+}
+
+.login, .login hr {
+    gap: 22px;
+}
+
+/* Content */
+
+.content {
+    height: 5909px;
+}
+
+/* Home Poster */
+
+.home-poster {
+    margin-top: 85px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-arrow {
+    margin-right: 35px;
+}
+
+.right-arrow {
+    margin-left: 35px;
+}
+
+.left-arrow, .right-arrow {
+    width: 75px;
+}
+
+.poster {
+    width: 1473px;
+    height: 920;
+}
+
+/* Home Buttons */
+
+.home-buttons {
+    margin-top: 64px;
+    font-family: "Jaini", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    justify-content: space-between;
+}
+
+.home-buttons a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.home-buttons a:hover {
+    transform: scale(1.025);
+    transition: .5s;
+}
+
+.hero, .marketplace, .maps, .store {
+    padding: 12px 24px 12px;
+    border: solid 3px var(--redmain);
+    border-radius: 30px;
+}
+
+.hero, .marketplace, .maps, .store, .home-buttons {
+    justify-content: space-between;
+    gap: 35px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%(1920px);
+    min-height: 298px;
+    display: flex;
+    background-color: var(--darkheader);
+    color: #ddd;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+}
+
+footer .coluna {
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+}
+
+footer .coluna:nth-child(4) {
+    width: 400px;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .coluna ul li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+@media(max-width: 950px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer .coluna {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .coluna:nth-child(4) {
+        width: 100%;
+    }
+}
